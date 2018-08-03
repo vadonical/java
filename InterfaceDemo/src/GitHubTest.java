@@ -3,3 +3,9 @@ public class GitHubTest {
         System.out.println("GitHub test");
     }
 }
+
+
+interface Demo{
+    //变量
+    //方法
+}
