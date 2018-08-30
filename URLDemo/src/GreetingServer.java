@@ -1,7 +1,13 @@
 import java.net.*;
 import java.io.*;
 
-public class GreetingServer extends Thread
+/*
+*
+* Hello,java
+*
+* */
+
+public class GreetingServer extends Thread // extend class
 {
     private ServerSocket serverSocket;
 
@@ -17,7 +23,7 @@ public class GreetingServer extends Thread
         {
             try
             {
-                System.out.println("Wating for remote conneting...,the port is:" + serverSocket.getLocalPort() + "...");
+                System.out.println("Watng for remote conneting...,the port is:" + serverSocket.getLocalPort() + "...");
                 Socket server = serverSocket.accept();
                 System.out.println("The address of remote Host" + server.getRemoteSocketAddress());
                 DataInputStream in = new DataInputStream(server.getInputStream());
